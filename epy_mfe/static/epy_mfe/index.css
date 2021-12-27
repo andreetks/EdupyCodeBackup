@@ -1,0 +1,313 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Poppins' ,'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial, Helvetica, 
+      sans-serif;
+      font-style: normal;
+      letter-spacing: 0;
+    padding: 1rem;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background: url("/static/epy_mfe/bg.jpeg") no-repeat center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: sans-serif;
+    height: 100vh;
+  }
+  
+  
+  .login-box {
+    width: 320px;
+    height: 420px;
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    border-radius: 15px;
+  }
+  
+  
+  .login-box h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+  }
+  
+  .login-box label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+  }
+  
+  .login-box input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .login-box input[type="text"], .login-box input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .login-box input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #b80f22;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+  }
+  
+  .login-box input[type="submit"]:hover {
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+  }
+  
+  .login-box a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+  }
+  
+  .login-box a:hover {
+    color: #fff;
+  }
+  
+  .App {
+    text-align: center;
+  }
+  
+  .App-logo {
+    width: 100px;
+    height: 120px;
+    border-radius: 0%;
+    top: -50px;
+    pointer-events: none;
+    position: absolute;
+    left: 35%;
+  }
+  
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  #contact{
+    padding:10px 0 10px;
+  }
+  
+  .contact-text{
+    margin:45px auto;
+  }
+  
+  .mail-message-area{
+    width:100%;
+    padding:0 15px;
+  }
+  
+  .mail-message{
+    width: 100%;
+    background:rgba(255,255,255, 0.8) !important;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    transition: all 0.7s;
+    margin:0 auto;
+    border-radius: 0;
+  }
+  
+  .not-visible-message{
+    height:0px;
+    opacity: 0;
+  }
+  
+  .visible-message{
+    height:auto;
+    opacity: 1;
+    margin:25px auto 0;
+  }
+  
+  /* Input Styles */
+  
+  .form{
+    width: 100%;
+    padding: 15px;
+    background:#f8f8f8;
+    border:1px solid rgba(0, 0, 0, 0.075);
+    margin-bottom:25px;
+    color:#727272 !important;
+    font-size:13px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+  
+  .form:hover{
+    border:1px solid #8BC3A3;
+  }
+  
+  .form:focus{
+    color: white;
+    outline: none;
+    border:1px solid #8BC3A3;
+  }
+  
+  .textarea{
+    height: 200px;
+    max-height: 200px;
+    max-width: 100%;
+  }
+  
+  /* Generic Button Styles */
+  
+  .button{
+    padding:8px 12px;
+    background:#0A5175;
+    display: block;
+    width:120px;
+    margin:10px 0 0px 0;
+    border-radius:3px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align:center;
+    font-size:0.8em;
+    box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+  }
+  
+  .button:hover{
+    background:#8BC3A3;
+    color:white;
+  }
+  
+  /* Send Button Styles */
+  
+  .form-btn{
+    width:180px;
+    display: block;
+    height: auto;
+    padding:15px;
+    color:#fff;
+    background:#8BC3A3;
+    border:none;
+    border-radius:3px;
+    outline: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    margin:auto;
+    box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+  }
+  
+  .form-btn:hover{
+    background:#111;
+    color: white;
+    border:none;
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .cardPregunta{
+    padding: 3%;
+    background-color: rgb(224, 220, 220);
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.025);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  .card__content {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  
+  .cards__item {
+    display: flex;
+    padding: 1rem;
+    @media(min-width: 40rem) {
+      width: 50%;
+    }
+    @media(min-width: 56rem) {
+      width: 33.3333%;
+    }
+  }
+  
+  .card__title {
+    color: #696969;
+    font-size: 1.25rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  .card__text {
+    color: #444444;
+    flex: 1 1 auto;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+  }
+  
+  .btn--block {
+    display: block;
+    width: 100%;
+  }
+  
+  .btnPregunta {
+    background-color: rgb(224, 220, 220);
+    border: 1px solid #cccccc;
+    color: #696969;
+    padding: 0.5rem;
+    text-transform: lowercase;
+  }
+
+  
